@@ -305,22 +305,23 @@
                 <h2 class="section-heading text-uppercase pb-5">Contact Me</h2>
 
             </div>
-            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <form action="mailto:caroline-jan@outlook.com" method="get" enctype="text/plain" id="contactForm"
+                name="sentMessage" novalidate="novalidate">
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input class="form-control" id="name" type="text" placeholder="Your Name *"
+                            <input class="form-control" id="name" type="text" placeholder="Your Name *" name="name"
                                 required="required" data-validation-required-message="Please enter your name." />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group">
-                            <input class="form-control" id="email" type="email" placeholder="Your Email *"
+                            <input class="form-control" id="email" type="email" placeholder="Your Email *" name="email"
                                 required="required"
                                 data-validation-required-message="Please enter your email address." />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group mb-md-0">
-                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
+                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" name="phone"
                                 required="required"
                                 data-validation-required-message="Please enter your phone number." />
                             <p class="help-block text-danger"></p>
@@ -329,7 +330,7 @@
                     <div class="col-md-6">
                         <div class="form-group form-group-textarea mb-md-0">
                             <textarea class="form-control" id="message" placeholder="Your Message *" required="required"
-                                data-validation-required-message="Please enter a message."></textarea>
+                                data-validation-required-message="Please enter a message." name="message"></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -340,6 +341,7 @@
                         Message</button>
                 </div>
             </form>
+
         </div>
     </section>
     <!-- Footer-->
@@ -616,17 +618,8 @@
             </div>
         </div>
     </div>
-    <button class="btn btn-primary" data-dismiss="modal" type="button">
-        <i class="fas fa-times mr-1"></i>
-        Close Project
-    </button>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+
+
     <!-- Modal 5-->
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -731,6 +724,7 @@
     <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
